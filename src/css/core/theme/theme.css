@@ -1,0 +1,40 @@
+.theme_base_default {
+	--color-base-default: #1F2533;
+	--color-base-essential: #EEEFF1;
+	--color-base-project: #293D66;
+	--color-base-phantom: #2E384D;
+	--color-base-stripe: #77B200;
+	--color-base-link: #5266CC;
+	--color-base-link-external: #293D66;
+
+	--color-bg-brand: var(--color-base-project);
+	--color-bg-default: var(--color-base-essential);
+	--color-bg-border: var(--color-base-phantom);
+	--color-bg-stripe: var(--color-base-stripe);
+
+	--color-text-primary: var(--color-base-default);
+	--color-text-secondary: var(--color-base-phantom);
+	--color-text-alternate: #ffffff;
+
+	--color-link: var(--color-base-link);
+	--color-link-external: var(--color-base-link-external);
+}
+
+.theme_base_dark {
+	--color-base-default: #EEEFF1;
+	--color-base-essential: #28334A;
+	--color-base-project: #A3B2D5;
+	--color-base-phantom: #E6E6E6;
+	--color-base-link: #7B8EC2;
+
+	--color-bg-brand: var(--color-base-project);
+	--color-bg-default: var(--color-base-essential);
+	--color-bg-border: var(--color-base-phantom);
+
+	--color-text-primary: var(--color-base-default);
+	--color-text-secondary: var(--color-base-phantom);
+
+	--color-link: var(--color-base-link);
+}
+
+@custom-media --screen-xxxlg (max-width: 1920px);

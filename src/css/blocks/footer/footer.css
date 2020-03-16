@@ -1,0 +1,21 @@
+.footer {
+	padding-bottom: 40px;
+
+	&__menu {
+		display: flex;
+		margin: 0;
+		list-style: none;
+	}
+
+	&__menu-item {
+		margin-right: 80px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__menu-link {
+		color: var(--color-link-external);
+	}
+}

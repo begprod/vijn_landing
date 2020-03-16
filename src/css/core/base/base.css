@@ -1,0 +1,52 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-size: 16px;
+	line-height: 26px;
+	font-family: 'Lato', sans-serif;
+	background-color: var(--color-bg-default);
+	color: var(--color-text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	font-family: 'Arvo', serif;
+}
+
+h1 {
+	font-size: 64px;
+	line-height: 60px;
+}
+
+h2 {
+	font-size: 40px;
+	line-height: 60px;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 36px;
+	font-family: 'Lato', sans-serif;
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 36px;
+	font-family: 'Lato', sans-serif;
+}
+
+a {
+	color: var(--color-link);
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}

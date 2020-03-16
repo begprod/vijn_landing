@@ -1,0 +1,17 @@
+.advantages {
+	padding: 220px 0;
+
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__item {
+		width: calc((100% / 3) - 80px);
+
+		&:nth-child(3n) {
+			margin-bottom: 80px;
+		}
+	}
+}

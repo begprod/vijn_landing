@@ -1,0 +1,109 @@
+extends ../layouts/default
+
+block content
+	.section.main-screen
+		.container
+			h1.section__title Check your website's security
+			h4.section__subtitle Scan your website for vulnerabilities and online threats.
+			.main-screen__inner
+				.main-screen__steps
+					.steps
+						.steps__inner
+							.steps__item
+								.steps__title I
+								.steps__description Enter a URL
+								.steps__dot
+							.steps__item
+								.steps__title II
+								.steps__description Verify you own the website
+								.steps__dot
+							.steps__item
+								.steps__title III
+								.steps__description Get in-depth vulnerability report.
+								.steps__dot
+						.steps__line
+							img(src="../assets/images/line.svg" alt="line")
+				.main-screen__form
+					form(action="#").form
+						fieldset.form__fieldset
+							input(id="url" name="url" type="text").input.form__input
+							label(for="url").form__label https://
+						button.button Begin to scan
+			a(href="#").main-screen__scroll-down
+					img(src="./assets/images/mouse.svg" alt="scroll down")
+
+	.section.advantages
+		.container
+			h2.section__title With Vijn, you save time and money
+			.advantages__inner
+				.advantages__item
+					h3 Totally free
+					p При регистрации на сервисе у вас будут расширены ограничения проверки, предназначенные для гостей, и вы получите возможность проверять гораздо большее количество текстов с помощью нашего сервиса плагиат
+				.advantages__item
+					h3 Easy to start
+					p No registration required. No need to install or configure anything. No registration required. No need to install or configure anything.
+				.advantages__item
+					h3 Accurate
+					p Vijn has high detection rates and discovers vulnerabilities with comparable quality, or even better quality, relative to commercial scanners.
+				.advantages__item
+					h3 Fast
+					p Get the first results in 15 minutes. For maximum speed, we've paid special attention to core, templates, and plugin vulnerabilities in CMS platforms including WordPress, Drupal, and Joomla. Get the first results in 15 minutes.
+				.advantages__item
+					h3 Well adapted
+					p Whether you run an online business or conduct pentesting, you will be satisfied with Vijn's power and ease of use _____ you will be satisfied with Vijn's power and ease of use
+				.advantages__item
+					h3 Able to scan everywhere
+					p You can check all websites online or offline, including those behind NAT or on a LAN
+
+
+
+	.section.questions
+		.container
+			h2.section__title Enjoy the experience
+			.questions__slider
+				.swiper-container
+					.swiper-wrapper
+						.swiper-slide.slider-card
+							.slider-card__image
+								img(src="./assets/images/illustrations/robot.png")
+							.slider-card__aside
+								h3.slider-card__title How does it work?
+								.slider-card__description
+									p Vijn scans sites by sending requests and analyzing the responses. If a vulnerability is suspected, it sends requests to confirm this.
+									p Scanning methods include signature analysis (determining the version of software in use and using this information to probe for known vulnerabilities) plus a number of heuristics.
+									p Thanks to this, we can scan popular platforms, including WordPress, Drupal, and Joomla, as well as self-written sites (such as corporate portals or custom-developed online stores).
+						.swiper-slide.slider-card
+							.slider-card__image
+								img(src="./assets/images/illustrations/robot2.png")
+							.slider-card__aside
+								h3.slider-card__title Why is it free?
+								.slider-card__description
+									p We want to make the web safer and offer a win–win approach: users can check their websites for security vulnerabilities for free while we get the opportunity to improve our threat detection technology.
+						.swiper-slide.slider-card
+							.slider-card__image
+								img(src="./assets/images/illustrations/robot.png")
+							.slider-card__aside
+								h3.slider-card__title How does it work?
+								.slider-card__description
+									p Vijn scans sites by sending requests and analyzing the responses. If a vulnerability is suspected, it sends requests to confirm this.
+									p Scanning methods include signature analysis (determining the version of software in use and using this information to probe for known vulnerabilities) plus a number of heuristics.
+						.swiper-slide.slider-card
+							.slider-card__image
+								img(src="./assets/images/illustrations/robot2.png")
+							.slider-card__aside
+								h3.slider-card__title Why is it free?
+								.slider-card__description
+									p We want to make the web safer and offer a win–win approach: users can check their websites for security vulnerabilities for free while we get the opportunity to improve our threat detection technology.
+						.swiper-slide.slider-card
+							.slider-card__image
+								img(src="./assets/images/illustrations/robot.png")
+							.slider-card__aside
+								h3.slider-card__title How does it work?
+								.slider-card__description
+									p Vijn scans sites by sending requests and analyzing the responses. If a vulnerability is suspected, it sends requests to confirm this.
+									p Scanning methods include signature analysis (determining the version of software in use and using this information to probe for known vulnerabilities) plus a number of heuristics.
+					.swiper-pagination
+
+	.section.signup
+		.container.signup__inner
+			h2.section__title <a href="#">Sign Up</a> to store scanning history and watch your websites getting better and safer. Still free!

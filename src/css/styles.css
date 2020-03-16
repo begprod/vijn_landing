@@ -1,0 +1,18 @@
+@import "./core/fonts/fonts.css";
+@import "./core/theme/theme.css";
+@import "./core/base/base.css";
+@import "./core/layout/layout.css";
+
+@import "./vendors/swiper.css";
+
+@import "./blocks/header/header.css";
+@import "./blocks/footer/footer.css";
+@import "./blocks/button/button.css";
+@import "./blocks/input/input.css";
+@import "./blocks/form/form.css";
+@import "./blocks/menu/menu.css";
+@import "./blocks/steps/steps.css";
+@import "./blocks/main-screen/main-screen.css";
+@import "./blocks/advantages/advantages.css";
+@import "./blocks/slider/slider.css";
+@import "./blocks/signup/signup.css";
