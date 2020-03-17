@@ -37,4 +37,9 @@
 	--color-link: var(--color-base-link);
 }
 
-@custom-media --screen-xxxlg (max-width: 1920px);
+@custom-media --screen-xxl (max-width: 1920px);
+@custom-media --screen-xl (max-width: 1440px);
+@custom-media --screen-l (max-width: 1280px);
+@custom-media --screen-m (max-width: 1024px);
+@custom-media --screen-s (max-width: 768px);
+@custom-media --screen-xs (max-width: 480px);

@@ -6,6 +6,10 @@
 		margin-top: 80px;
 	}
 
+	&__title {
+		margin-bottom: 40px;
+	}
+
 	&__steps {
 		margin-bottom: 90px;
 	}
@@ -38,5 +42,23 @@
 	100% {
 		transform: translateY(15px) translateX(-50%);
 		opacity: 0;
+	}
+}
+
+@media screen and (--screen-l) {
+	.main-screen {
+		&__steps {
+			display: none;
+		}
+
+		&__form {
+			display: none;
+		}
+	}
+}
+
+@media screen and (--screen-m) {
+	.main-screen {
+		padding: 80px 0;
 	}
 }

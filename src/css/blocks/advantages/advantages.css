@@ -5,13 +5,26 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		margin-bottom: -80px;
 	}
 
 	&__item {
 		width: calc((100% / 3) - 80px);
+		margin-bottom: 80px;
+	}
+}
 
-		&:nth-child(3n) {
-			margin-bottom: 80px;
+@media screen and (--screen-l) {
+	.advantages {
+		padding: 160px 0 80px 0;
+
+		&__inner {
+			margin-bottom: -60px;
+		}
+
+		&__item {
+			width: calc((100% / 2) - 60px);
+			margin-bottom: 60px;
 		}
 	}
 }

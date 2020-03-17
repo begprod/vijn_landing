@@ -1,9 +1,10 @@
 .container {
-	max-width: 1400px;
+	max-width: 1440px;
 	margin: 0 auto;
+	padding: 0 40px;
 
 	&_wide {
-		max-width: 1840px;
+		max-width: 1920px;
 	}
 }
 
@@ -22,5 +23,19 @@
 	&__subtitle {
 		text-align: center;
 		font-weight: normal;
+	}
+}
+
+@media screen and (--screen-l) {
+	.container {
+		padding: 0 80px;
+
+		&_wide {
+			padding: 0 40px;
+		}
+	}
+
+	.section {
+		border-top: none;
 	}
 }

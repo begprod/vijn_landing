@@ -1,5 +1,5 @@
 .questions {
-	padding: 90px;
+	padding: 90px 120px;
 
 	&__slider {
 
@@ -73,6 +73,28 @@
 			&.swiper-pagination-bullet-active {
 				box-shadow: 0 0 0 10px var(--color-bg-default), 0 0 0 12px var(--color-text-primary);
 			}
+		}
+	}
+}
+
+@media screen and (--screen-l) {
+	.slider-card {
+		flex-direction: column;
+
+		&__image {
+			margin-right: 0;
+			margin-bottom: 40px;
+		}
+	}
+
+	.swiper-container-horizontal {
+		> .swiper-pagination {
+			position: relative;
+			top: auto;
+			right: auto;
+			margin-top: 40px;
+			margin-bottom: 5px;
+			transform: none;
 		}
 	}
 }

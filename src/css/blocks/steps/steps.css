@@ -43,3 +43,11 @@
 		}
 	}
 }
+
+@media screen and (--screen-xl) {
+	.steps {
+		&__line {
+			display: none;
+		}
+	}
+}

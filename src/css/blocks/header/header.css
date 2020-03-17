@@ -2,8 +2,9 @@
 	padding-top: 40px;
 
 	&__inner {
-		 display: flex;
-		 justify-content: space-between;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	 }
 
 	&__logo {}
@@ -12,5 +13,13 @@
 
 	+ .section {
 		border: none;
+	}
+}
+
+@media screen and (--screen-m) {
+	.header {
+		&__menu {
+			display: none;
+		}
 	}
 }

@@ -1,5 +1,4 @@
-var swiper = new Swiper('.swiper-container', {
-	// direction: 'vertical',
+const swiper = new Swiper('.swiper-container', {
 	slidesPerView: 1,
 	spaceBetween: 0,
 	autoHeight: false,
@@ -15,5 +14,5 @@ var swiper = new Swiper('.swiper-container', {
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
-	},
+	}
 });
