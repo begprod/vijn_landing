@@ -44,9 +44,7 @@
 }
 
 @media screen and (--screen-xxs) {
-	.advantages {
-		&__item {
-			outline: 5px solid fuchsia;
-		}
+	.advantages__item {
+		display: none;
 	}
 }

@@ -1,4 +1,5 @@
 @import "./core/fonts/fonts.css";
+@import "./core/breakpoints/breakpoints.css";
 @import "./core/theme/theme.css";
 @import "./core/base/base.css";
 @import "./core/layout/layout.css";

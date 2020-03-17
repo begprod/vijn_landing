@@ -108,3 +108,17 @@
 		}
 	}
 }
+
+@media screen and (--screen-xs) {
+	.questions {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+@media screen and (--screen-xxs) {
+	.questions {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

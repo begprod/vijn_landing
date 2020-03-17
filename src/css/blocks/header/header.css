@@ -23,3 +23,9 @@
 		}
 	}
 }
+
+@media screen and (--screen-xxs) {
+	.header {
+		padding-top: 20px;
+	}
+}

@@ -66,9 +66,3 @@
 		}
 	}
 }
-
-@media screen and (--screen-xxs) {
-	.main-screen {
-		background: red;
-	}
-}

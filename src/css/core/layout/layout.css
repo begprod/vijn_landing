@@ -9,7 +9,7 @@
 }
 
 .section {
-	border-top: 2px solid var(--color-base-stripe);
+	border-top: 2px solid var(--color-bg-stripe);
 
 	&__inner {
 
@@ -43,5 +43,11 @@
 @media screen and (--screen-s) {
 	.container {
 		padding: 0 40px;
+	}
+}
+
+@media screen and (--screen-xxs) {
+	.container {
+		padding: 0 20px;
 	}
 }

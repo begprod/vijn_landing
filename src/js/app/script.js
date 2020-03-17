@@ -16,4 +16,12 @@ var swiper = new Swiper('.swiper-container', {
 		el: '.swiper-pagination',
 		clickable: true,
 	},
+	breakpoints: {
+		768: {
+			autoHeight: false
+		},
+		320: {
+			autoHeight: true
+		}
+	}
 });

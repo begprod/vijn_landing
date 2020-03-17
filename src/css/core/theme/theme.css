@@ -1,46 +1,25 @@
-.theme_base_default {
-	--color-base-default: #1F2533;
-	--color-base-essential: #EEEFF1;
-	--color-base-project: #293D66;
-	--color-base-phantom: #2E384D;
-	--color-base-stripe: #77B200;
-	--color-base-link: #5266CC;
-	--color-base-link-external: #293D66;
+:root {
+	--color-bg-brand: #293D66;
+	--color-bg-default: #EEEFF1;
+	--color-bg-border: #2E384D;
+	--color-bg-stripe: #77B200;
 
-	--color-bg-brand: var(--color-base-project);
-	--color-bg-default: var(--color-base-essential);
-	--color-bg-border: var(--color-base-phantom);
-	--color-bg-stripe: var(--color-base-stripe);
-
-	--color-text-primary: var(--color-base-default);
-	--color-text-secondary: var(--color-base-phantom);
+	--color-text-primary: #1F2533;
+	--color-text-secondary: #2E384D;
 	--color-text-alternate: #ffffff;
 
-	--color-link: var(--color-base-link);
-	--color-link-external: var(--color-base-link-external);
+	--color-link: #5266CC;
+	--color-link-external: #293D66;
 }
 
 .theme_base_dark {
-	--color-base-default: #EEEFF1;
-	--color-base-essential: #28334A;
-	--color-base-project: #A3B2D5;
-	--color-base-phantom: #E6E6E6;
-	--color-base-link: #7B8EC2;
+	--color-bg-brand: #A3B2D5;
+	--color-bg-default: #28334A;
+	--color-bg-border: #E6E6E6;
 
-	--color-bg-brand: var(--color-base-project);
-	--color-bg-default: var(--color-base-essential);
-	--color-bg-border: var(--color-base-phantom);
+	--color-text-primary: #EEEFF1;
+	--color-text-secondary: #E6E6E6;
 
-	--color-text-primary: var(--color-base-default);
-	--color-text-secondary: var(--color-base-phantom);
-
-	--color-link: var(--color-base-link);
+	--color-link: #EEEFF1;
+	--color-link-external: #EEEFF1;
 }
-
-@custom-media --screen-xxl (max-width: 1920px);
-@custom-media --screen-xl (max-width: 1440px);
-@custom-media --screen-l (max-width: 1280px);
-@custom-media --screen-m (max-width: 1024px);
-@custom-media --screen-s (max-width: 980px);
-@custom-media --screen-xs (max-width: 768px);
-@custom-media --screen-xxs (max-width: 480px);
