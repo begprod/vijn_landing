@@ -39,3 +39,9 @@
 		border-top: none;
 	}
 }
+
+@media screen and (--screen-s) {
+	.container {
+		padding: 0 40px;
+	}
+}

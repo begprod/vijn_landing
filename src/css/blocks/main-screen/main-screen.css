@@ -47,11 +47,7 @@
 
 @media screen and (--screen-l) {
 	.main-screen {
-		&__steps {
-			display: none;
-		}
-
-		&__form {
+		&__inner {
 			display: none;
 		}
 	}
@@ -60,5 +56,19 @@
 @media screen and (--screen-m) {
 	.main-screen {
 		padding: 80px 0;
+	}
+}
+
+@media screen and (--screen-s) {
+	.main-screen {
+		&__scroll-down {
+			display: none;
+		}
+	}
+}
+
+@media screen and (--screen-xxs) {
+	.main-screen {
+		background: red;
 	}
 }

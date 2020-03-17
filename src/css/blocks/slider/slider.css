@@ -2,7 +2,6 @@
 	padding: 90px 120px;
 
 	&__slider {
-
 		.swiper-container {
 			padding-right: 50px;
 		}
@@ -40,7 +39,6 @@
 	}
 
 	&.swiper-slide-active {
-
 		.slider-card__aside {
 			> * {
 				opacity: 1;
@@ -70,6 +68,10 @@
 			background-color: var(--color-text-primary);
 			transition: box-shadow .3s ease-in-out;
 
+			&:last-child {
+				margin-right: 0;
+			}
+
 			&.swiper-pagination-bullet-active {
 				box-shadow: 0 0 0 10px var(--color-bg-default), 0 0 0 12px var(--color-text-primary);
 			}
@@ -78,6 +80,14 @@
 }
 
 @media screen and (--screen-l) {
+	.questions {
+		&__slider {
+			.swiper-container {
+				padding-right: 0;
+			}
+		}
+	}
+
 	.slider-card {
 		flex-direction: column;
 

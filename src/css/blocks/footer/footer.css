@@ -1,9 +1,15 @@
 .footer {
 	padding-bottom: 40px;
 
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
+
 	&__menu {
 		display: flex;
 		margin: 0;
+		padding: 0;
 		list-style: none;
 	}
 
@@ -17,5 +23,13 @@
 
 	&__menu-link {
 		color: var(--color-link-external);
+	}
+}
+
+@media screen and (--screen-s) {
+	.footer {
+		&__inner {
+			justify-content: center;
+		}
 	}
 }
