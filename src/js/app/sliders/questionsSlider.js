@@ -1,7 +1,6 @@
-const swiper = new Swiper('.swiper-container', {
+const questionsSlider = new Swiper('.js-questions-slider', {
 	slidesPerView: 1,
 	spaceBetween: 0,
-	autoHeight: false,
 	loop: true,
 	autoplay: {
 		delay: 5000,
@@ -13,6 +12,14 @@ const swiper = new Swiper('.swiper-container', {
 	},
 	pagination: {
 		el: '.swiper-pagination',
-		clickable: true,
+		clickable: true
+	},
+	breakpoints: {
+		768: {
+			autoHeight: false
+		},
+		320: {
+			autoHeight: true
+		}
 	}
 });

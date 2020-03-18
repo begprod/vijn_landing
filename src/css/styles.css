@@ -15,5 +15,8 @@
 @import "./blocks/steps/steps.css";
 @import "./blocks/main-screen/main-screen.css";
 @import "./blocks/advantages/advantages.css";
-@import "./blocks/slider/slider.css";
+@import "./blocks/questions/questions.css";
+@import "./blocks/questions/questions-card.css";
+@import "./blocks/sliders/slider.css";
+@import "./blocks/sliders/questions-slider.css";
 @import "./blocks/signup/signup.css";

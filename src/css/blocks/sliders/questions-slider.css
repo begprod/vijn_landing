@@ -1,0 +1,9 @@
+.questions-slider {}
+
+@media screen and (--screen-l) {
+	.questions-slider {
+		.swiper-container {
+			padding-right: 0;
+		}
+	}
+}

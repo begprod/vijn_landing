@@ -2,10 +2,24 @@
 	padding: 220px 0;
 
 	&__inner {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
 		margin-bottom: -80px;
+
+		.swiper-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		&.swiper-container-initialized {
+			.swiper-wrapper {
+				flex-wrap: nowrap;
+			}
+
+			.advantages__item {
+				width: 80%;
+				margin-bottom: 0;
+			}
+		}
 	}
 
 	&__item {
@@ -44,7 +58,13 @@
 }
 
 @media screen and (--screen-xxs) {
-	.advantages__item {
-		display: none;
+	.advantages {
+		&__inner {
+			&.swiper-container-initialized {
+				.advantages__item {
+					width: 100%;
+				}
+			}
+		}
 	}
 }
