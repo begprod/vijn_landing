@@ -18,12 +18,14 @@ function initAdvantagesSlider() {
 function checkBreakpoint() {
 	if (mobileBreakpoint.matches === true) {
 		initAdvantagesSlider();
-	} else if (mobileBreakpoint.matches === false && advantagesSlider !== undefined) {
+	} else if (mobileBreakpoint.matches === false && typeof advantagesSlider !== 'undefined') {
 		advantagesSlider.destroy();
 	}
 }
 
+const advantagesSliderContainer = document.querySelector('.js-advantages-slider');
 
-mobileBreakpoint.addListener(checkBreakpoint);
-
-checkBreakpoint();
+if (advantagesSliderContainer) {
+	mobileBreakpoint.addListener(checkBreakpoint);
+	checkBreakpoint();
+}

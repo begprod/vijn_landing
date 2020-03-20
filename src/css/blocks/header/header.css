@@ -10,10 +10,6 @@
 	&__logo {}
 
 	&__menu {}
-
-	+ .section {
-		border: none;
-	}
 }
 
 @media screen and (--screen-m) {

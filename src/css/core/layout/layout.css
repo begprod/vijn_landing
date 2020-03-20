@@ -3,14 +3,16 @@
 	margin: 0 auto;
 	padding: 0 40px;
 
+	&_narrow {
+		max-width: 960px;
+	}
+
 	&_wide {
 		max-width: 1920px;
 	}
 }
 
 .section {
-	border-top: 2px solid var(--color-bg-stripe);
-
 	&__inner {
 
 	}
@@ -21,8 +23,20 @@
 	}
 
 	&__subtitle {
+		margin-bottom: 0;
 		text-align: center;
 		font-weight: normal;
+	}
+}
+
+.layout {
+	padding: 160px 0 260px 0;
+
+	&__inner {}
+
+	&__title {
+		margin-bottom: 160px;
+		text-align: center;
 	}
 }
 
