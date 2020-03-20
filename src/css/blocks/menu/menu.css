@@ -7,27 +7,27 @@
 	}
 
 	&__item {
-		margin-right: 40px;
-
 		&:nth-last-child(2) {
-
 			&::before {
 				content: '|';
-				margin: 0 60px 0 17px;
+				margin: 0 60px 0 40px;
 			}
-		}
-
-		&:last-child {
-			margin-right: 0;
 		}
 	}
 
 	&__link {
+		padding: 10px 20px;
 		color: var(--color-link-external);
 
 		&_button {
-			padding: 10px 20px;
+			margin-right: 20px;
 			border: 1px solid var(--color-link-external);
+			transition: color, background-color .3s ease-in-out;
+
+			&:hover {
+				color: var(--color-text-alternate);
+				background-color: var(--color-bg-brand);
+			}
 		}
 	}
 }
