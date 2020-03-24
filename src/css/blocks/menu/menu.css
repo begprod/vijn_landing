@@ -21,13 +21,76 @@
 
 		&_button {
 			margin-right: 20px;
-			border: 1px solid var(--color-link-external);
-			transition: color, background-color .3s ease-in-out;
+		}
+	}
+}
 
-			&:hover {
-				color: var(--color-text-alternate);
-				background-color: var(--color-bg-brand);
+@media screen and (--screen-m) {
+	.menu {
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 240px;
+		height: 100%;
+		padding-top: 100px;
+		transform: translateX(250px);
+		background-color: var(--color-bg-default);
+		transition: transform .3s ease-in-out;
+		z-index: 101;
+
+		&__inner {
+			flex-direction: column;
+			height: 100%;
+			padding: 0 40px;
+			text-align: right;
+			overflow-x: auto;
+		}
+
+		&__item {
+			margin-bottom: 20px;
+
+			&:nth-last-child(2) {
+				position: relative;
+				margin-top: 60px;
+
+				&::after {
+					content: "–";
+					position: absolute;
+					top: -40px;
+					right: 0;
+					font-weight: bold;
+				}
+
+				&::before {
+					display: none;
+				}
 			}
+		}
+
+		&__link {
+			display: block;
+			width: 100%;
+			padding-right: 0;
+			padding-left: 0;
+			font-size: 20px;
+
+			&_button {
+				border: none;
+				margin: 0;
+
+				&:hover {
+					color: var(--color-link-external);
+					background-color: transparent;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (--screen-xxs) {
+	.menu {
+		&__inner {
+			padding: 0 20px;
 		}
 	}
 }

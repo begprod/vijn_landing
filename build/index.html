@@ -12,7 +12,10 @@
     <div class="header">
       <div class="container container_wide header__inner">
         <div class="header__logo"><a href="/"><img src="./assets/images/logo.svg" alt="vijn"></a></div>
-        <div class="header__menu">
+        <div class="header__menu js-menu-container">
+          <button class="button button_view_transparent button_size_sm header__menu-trigger js-menu-trigger" type="button"><span>Menu</span>
+            <div class="header__menu-trigger-icon"><span></span></div>
+          </button>
           <nav class="menu">
             <ul class="menu__inner">
               <li class="menu__item"><a class="menu__link" href="#">Release notes</a></li>
@@ -20,10 +23,11 @@
               <li class="menu__item"><a class="menu__link" href="#">About us</a></li>
               <li class="menu__item"><a class="menu__link" href="./faq.html">FAQ</a></li>
               <li class="menu__item"><a class="menu__link" href="#">User guide</a></li>
-              <li class="menu__item"><a class="menu__link menu__link_button" href="#"> Register</a></li>
+              <li class="menu__item"><a class="button button_view_transparent button_size_sm menu__link menu__link_button" href="#">Register</a></li>
               <li class="menu__item"><a class="menu__link" href="#"> Log in</a></li>
             </ul>
           </nav>
+          <div class="header__overlay js-menu-overlay"></div>
         </div>
       </div>
     </div>
@@ -60,10 +64,11 @@
                 <input class="input form__input" id="url" name="url" type="text">
                 <label class="form__label" for="url">https://</label>
               </fieldset>
-              <button class="button">Begin to scan</button>
+              <button class="button button_size_lg">Begin to scan</button>
             </form>
           </div>
-        </div><a class="main-screen__scroll-down" href="#"><img src="./assets/images/mouse.svg" alt="scroll down"></a>
+        </div>
+        <div class="main-screen__scroll-down"><img src="./assets/images/mouse.svg" alt="scroll down"></div>
       </div>
     </div>
     <div class="section advantages">

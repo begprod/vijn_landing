@@ -12,7 +12,10 @@
     <div class="header">
       <div class="container container_wide header__inner">
         <div class="header__logo"><a href="/"><img src="./assets/images/logo.svg" alt="vijn"></a></div>
-        <div class="header__menu">
+        <div class="header__menu js-menu-container">
+          <button class="button button_view_transparent button_size_sm header__menu-trigger js-menu-trigger" type="button"><span>Menu</span>
+            <div class="header__menu-trigger-icon"><span></span></div>
+          </button>
           <nav class="menu">
             <ul class="menu__inner">
               <li class="menu__item"><a class="menu__link" href="#">Release notes</a></li>
@@ -20,10 +23,11 @@
               <li class="menu__item"><a class="menu__link" href="#">About us</a></li>
               <li class="menu__item"><a class="menu__link" href="./faq.html">FAQ</a></li>
               <li class="menu__item"><a class="menu__link" href="#">User guide</a></li>
-              <li class="menu__item"><a class="menu__link menu__link_button" href="#"> Register</a></li>
+              <li class="menu__item"><a class="button button_view_transparent button_size_sm menu__link menu__link_button" href="#">Register</a></li>
               <li class="menu__item"><a class="menu__link" href="#"> Log in</a></li>
             </ul>
           </nav>
+          <div class="header__overlay js-menu-overlay"></div>
         </div>
       </div>
     </div>
@@ -42,10 +46,22 @@
             </div>
             <div class="tabs__panels">
               <div class="tabs-panel js-tabs-panel is-active">
-                <p>General questions</p>
+                <h2>How do I start scanning?</h2>
+                <div class="readmore js-read-more">
+                  <p>Scanning with PT BBS is fast and easy. Just enter the address of your site—on the internet or a local network—and configure your scanning method: <span class="readmore__button js-readmore-button">Развернуть ▼</span></p>
+                  <div class="readmore__hidden-text js-read-more-hidden-text">
+                    <ul>
+                      <li>Without confirmation of site ownership, you can scan via an agent. An agent is a small program that can be run without local installation—just open a secure executable file and you can start scanning. This is a convenient method when you cannot or do not want to make alterations to your site's root directory, or when your site is located behind a NAT (in a local network). Note that this method does not allow for anonymous scanning. All requests from the agent are tunneled from our service to the site being scanned via the computer of the user who initiated the scanning. This means that the computer (IP address) where the requests originated will be visible on the site side.</li>
+                      <li>With confirmation of site ownership. For this method, a special HTML file must be placed in the root directory of the site that you want to scan. Our system will "see" the file and allow scanning to be initiated.</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
               <div class="tabs-panel js-tabs-panel">
-                <p>Technical</p>
+                <h2>Что такое агент и для чего он нужен? Зачем могут понадобиться несколько агентов?</h2>
+                <p>Агент — это небольшая open-source программа (безопасный исполняемый файл), не требующая установки на компьютере и особых привилегий. Агент нужен для сканирования сайтов в локальных сетях (за NAT) и в тех случаях, когда нет возможности подтвердить владение сайтом с помощью сертификата, например когда аудит проводят внешние эксперты, не имеющие доступа к серверам сайта. Агент создает туннель, через который передаются запросы от сканирующего сервера к проверяемому сайту. Развернуть ▼</p>
+                <p>Агент — это небольшая open-source программа (безопасный исполняемый файл), не требующая установки на компьютере и особых привилегий. Агент нужен для сканирования сайтов в локальных сетях (за NAT) и в тех случаях, когда нет возможности подтвердить владение сайтом с помощью сертификата, например когда аудит проводят внешние эксперты, не имеющие доступа к серверам сайта. Агент создает туннель, через который передаются запросы от сканирующего сервера к проверяемому сайту. Развернуть ▼</p>
+                <p>Агент — это небольшая open-source программа (безопасный исполняемый файл), не требующая установки на компьютере и особых привилегий. Агент нужен для сканирования сайтов в локальных сетях (за NAT) и в тех случаях, когда нет возможности подтвердить владение сайтом с помощью сертификата, например когда аудит проводят внешние эксперты, не имеющие доступа к серверам сайта. Агент создает туннель, через который передаются запросы от сканирующего сервера к проверяемому сайту.  Развернуть ▼</p>
               </div>
               <div class="tabs-panel js-tabs-panel">
                 <p>How to use</p>

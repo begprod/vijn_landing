@@ -6,6 +6,8 @@
 
 @import "./vendors/swiper.css";
 
+@import "./helpers/animations.css";
+
 @import "./blocks/header/header.css";
 @import "./blocks/footer/footer.css";
 @import "./blocks/button/button.css";
@@ -21,3 +23,4 @@
 @import "./blocks/sliders/questions-slider.css";
 @import "./blocks/signup/signup.css";
 @import "./blocks/tabs/tabs.css";
+@import "./blocks/readmore/readmore.css";

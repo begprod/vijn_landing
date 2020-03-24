@@ -54,6 +54,17 @@
 	}
 }
 
+@media screen and (--screen-m) {
+	.layout {
+		padding: 80px 0 120px 0;
+
+		&__title {
+			margin-bottom: 80px;
+			text-align: center;
+		}
+	}
+}
+
 @media screen and (--screen-s) {
 	.container {
 		padding: 0 40px;
