@@ -5,11 +5,18 @@
 
 	ol {
 		counter-reset: item;
+		margin-bottom: 80px;
+		padding: 0;
 
-		li {
+		> li {
 			display: block;
-			margin-bottom: 40px;
+			margin-bottom: 80px;
+			font-size: 24px;
 			font-weight: bold;
+
+			ul {
+				margin: 20px 0 40px 0;
+			}
 
 			&::before {
 				content: counters(item, ".") ". ";
@@ -18,8 +25,11 @@
 
 			ol {
 				margin-top: 40px;
+				margin-bottom: 0;
 
-				li {
+				> li {
+					margin-bottom: 40px;
+					font-size: 16px;
 					font-weight: normal;
 				}
 			}
