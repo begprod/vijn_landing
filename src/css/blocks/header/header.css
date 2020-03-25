@@ -95,6 +95,7 @@
 
 				.menu {
 					transform: translateX(0px);
+					z-index: 101;
 				}
 
 				.header__overlay {

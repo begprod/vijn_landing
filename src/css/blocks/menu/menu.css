@@ -36,7 +36,6 @@
 		transform: translateX(250px);
 		background-color: var(--color-bg-default);
 		transition: transform .3s ease-in-out;
-		z-index: 101;
 
 		&__inner {
 			flex-direction: column;

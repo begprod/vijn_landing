@@ -3,7 +3,7 @@ class Menu {
 		this.container = container;
 		this.menuTrigger = this.container.querySelector('.js-menu-trigger');
 		this.overlay = this.container.querySelector('.js-menu-overlay');
-		this.class = {
+		this.settings = {
 			activeClass: 'is-open',
 			croppedClass: 'is-cropped'
 		};
@@ -12,13 +12,13 @@ class Menu {
 
 	bindEvents() {
 		this.menuTrigger.addEventListener('click', (target) => {
-			this.container.classList.toggle(this.class.activeClass);
-			document.body.classList.toggle(this.class.croppedClass);
+			this.container.classList.toggle(this.settings.activeClass);
+			document.body.classList.toggle(this.settings.croppedClass);
 		});
 
 		this.overlay.addEventListener('click', () => {
-			this.container.classList.remove(this.class.activeClass);
-			document.body.classList.remove(this.class.croppedClass);
+			this.container.classList.remove(this.settings.activeClass);
+			document.body.classList.remove(this.settings.croppedClass);
 		});
 	}
 

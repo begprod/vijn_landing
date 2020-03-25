@@ -10,6 +10,10 @@
 	&_wide {
 		max-width: 1920px;
 	}
+
+	.container {
+		padding: 0;
+	}
 }
 
 .section {
@@ -38,6 +42,8 @@
 		margin-bottom: 160px;
 		text-align: center;
 	}
+
+	&__content {}
 }
 
 @media screen and (--screen-l) {

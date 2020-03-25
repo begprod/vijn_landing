@@ -1,0 +1,28 @@
+.content {
+	h3 {
+		margin-bottom: 40px;
+	}
+
+	ol {
+		counter-reset: item;
+
+		li {
+			display: block;
+			margin-bottom: 40px;
+			font-weight: bold;
+
+			&::before {
+				content: counters(item, ".") ". ";
+				counter-increment: item;
+			}
+
+			ol {
+				margin-top: 40px;
+
+				li {
+					font-weight: normal;
+				}
+			}
+		}
+	}
+}
