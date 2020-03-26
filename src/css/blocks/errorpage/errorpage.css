@@ -1,0 +1,12 @@
+.errorpage {
+	padding: 0;
+
+	&__inner {
+		width: 100%;
+		height: calc(100vh - 250px);
+		margin: 50px 0;
+		background-size: contain;
+		background-position: 50%;
+		background-repeat: no-repeat;
+	}
+}

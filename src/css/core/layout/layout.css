@@ -17,9 +17,7 @@
 }
 
 .section {
-	&__inner {
-
-	}
+	&__inner {}
 
 	&__title {
 		text-align: center;
