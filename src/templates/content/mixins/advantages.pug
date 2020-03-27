@@ -1,0 +1,35 @@
+mixin advantages(items)
+	.swiper-container.advantages__inner.js-advantages-slider
+		.swiper-wrapper
+			each item in items
+				.swiper-slide.advantages__item
+					h3= item.title
+					p= item.description
+		.swiper-pagination
+
++advantages([
+	{
+		title: 'Totally free',
+		description: 'При регистрации на сервисе у вас будут расширены ограничения проверки, предназначенные для гостей, и вы получите возможность проверять гораздо большее количество текстов с помощью нашего сервиса плагиат'
+	},
+	{
+		title: 'Easy to start',
+		description: 'No registration required. No need to install or configure anything. No registration required. No need to install or configure anything.'
+	},
+	{
+		title: 'Accurate',
+		description: 'Vijn has high detection rates and discovers vulnerabilities with comparable quality, or even better quality, relative to commercial scanners.'
+	},
+	{
+		title: 'Fast',
+		description: 'Get the first results in 15 minutes. For maximum speed, we\'ve paid special attention to core, templates, and plugin vulnerabilities in CMS platforms including WordPress, Drupal, and Joomla. Get the first results in 15 minutes.'
+	},
+	{
+		title: 'Well adapted',
+		description: 'Whether you run an online business or conduct pentesting, you will be satisfied with Vijn\'s power and ease of use _____ you will be satisfied with Vijn\'s power and ease of use'
+	},
+	{
+		title: 'Able to scan everywhere',
+		description: 'You can check all websites online or offline, including those behind NAT or on a LAN'
+	}
+])

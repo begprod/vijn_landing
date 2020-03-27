@@ -1,0 +1,38 @@
+mixin menu(items)
+	nav.menu
+		ul.menu__inner
+			each item in items
+				li.menu__item
+					a(href= item.href class= item.class).menu__link= item.title
+
++menu([
+	{
+		title: 'Release notes',
+		href: '#'
+	},
+	{
+		title: 'Blog',
+		href: '#'
+	},
+	{
+		title: 'About us',
+		href: '#'
+	},
+	{
+		title: 'FAQ',
+		href: '/faq.html'
+	},
+	{
+		title: 'User guide',
+		href: '#'
+	},
+	{
+		title: 'Register',
+		href: '#',
+		class: 'button button_view_transparent button_size_sm menu__link_button'
+	},
+	{
+		title: 'Log in',
+		href: '#'
+	}
+])

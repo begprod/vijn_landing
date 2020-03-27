@@ -1,0 +1,15 @@
+.section.main-screen
+	.container
+		h1.section__title.main-screen__title Check your website's security
+		h4.section__subtitle Scan your website for vulnerabilities and online threats.
+		.main-screen__inner
+			.main-screen__steps
+				include ../mixins/steps
+			.main-screen__form
+				form(action="#").form
+					fieldset.form__fieldset
+						input(id="url" name="url" type="text").input.form__input
+						label(for="url").form__label https://
+					button.button.button_size_lg Begin to scan
+		.main-screen__scroll-down
+			img(src="./assets/images/mouse.svg" alt="scroll down")

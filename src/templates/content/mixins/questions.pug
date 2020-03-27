@@ -1,0 +1,40 @@
+mixin questionsSlider(items)
+	.questions__inner.questions-slider
+		.swiper-container.js-questions-slider
+			.swiper-wrapper
+				each item in items
+					.swiper-slide.questions-card
+						.questions-card__image
+							img(src= item.image)
+						.questions-card__aside
+							h3.questions-card__title= item.title
+							.questions-card__description !{item.description}
+			.swiper-pagination
+
++questionsSlider([
+	{
+		image: './assets/images/illustrations/robot.svg',
+		title: 'How does it work?',
+		description: '<p>Vijn scans sites by sending requests and analyzing the responses. If a vulnerability is suspected, it sends requests to confirm this.</p><p>Scanning methods include signature analysis (determining the version of software in use and using this information to probe for known vulnerabilities) plus a number of heuristics.</p><p>Thanks to this, we can scan popular platforms, including WordPress, Drupal, and Joomla, as well as self-written sites (such as corporate portals or custom-developed online stores).</p>'
+	},
+	{
+		image: './assets/images/illustrations/robot2.svg',
+		title: 'Why is it free?',
+		description: '<p>We want to make the web safer and offer a win–win approach: users can check their websites for security vulnerabilities for free while we get the opportunity to improve our threat detection technology.</p>'
+	},
+	{
+		image: './assets/images/illustrations/robot.svg',
+		title: 'How does it work?',
+		description: '<p>Vijn scans sites by sending requests and analyzing the responses. If a vulnerability is suspected, it sends requests to confirm this.</p><p>Scanning methods include signature analysis (determining the version of software in use and using this information to probe for known vulnerabilities) plus a number of heuristics.</p><p>Thanks to this, we can scan popular platforms, including WordPress, Drupal, and Joomla, as well as self-written sites (such as corporate portals or custom-developed online stores).</p>'
+	},
+	{
+		image: './assets/images/illustrations/robot2.svg',
+		title: 'Why is it free?',
+		description: '<p>We want to make the web safer and offer a win–win approach: users can check their websites for security vulnerabilities for free while we get the opportunity to improve our threat detection technology.</p>'
+	},
+	{
+		image: './assets/images/illustrations/robot2.svg',
+		title: 'Why is it free?',
+		description: '<p>We want to make the web safer and offer a win–win approach: users can check their websites for security vulnerabilities for free while we get the opportunity to improve our threat detection technology.</p>'
+	},
+])

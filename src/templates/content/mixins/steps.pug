@@ -1,0 +1,25 @@
+mixin step(items)
+	.steps
+		.steps__inner
+			each item in items
+				.steps__item
+					.steps__title= item.title
+					.steps__description= item.description
+					.steps__dot
+		.steps__line
+			img(src="./assets/images/line.svg" alt="line")
+
++step([
+	{
+		title: 'I',
+		description: 'Enter a URL'
+	},
+	{
+		title: 'II',
+		description: 'Verify you own the website'
+	},
+	{
+		title: 'III',
+		description: 'Get in-depth vulnerability report.'
+	}
+])
