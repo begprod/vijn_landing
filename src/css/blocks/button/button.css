@@ -9,6 +9,16 @@
 	transition: color, background-color .3s ease-in-out;
 	cursor: pointer;
 
+	&:hover {
+		color: var(--color-text-alternate);
+		background-color: var(--color-bg-brand);
+	}
+
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 0 3px var(--color-bg-default), 0 0 0 4px var(--color-bg-brand);
+	}
+
 	&_size_lg {
 		font-size: 18px;
 		padding: 20px 40px;

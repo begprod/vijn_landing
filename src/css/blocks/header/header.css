@@ -13,6 +13,22 @@
 
 	&__menu-trigger {
 		display: none;
+
+		&:hover {
+			.header__menu-trigger-icon {
+				span {
+					background-color: var(--color-text-alternate);
+				}
+
+				&::before {
+					background-color: var(--color-text-alternate);
+				}
+
+				&::after {
+					background-color: var(--color-text-alternate);
+				}
+			}
+		}
 	}
 
 	&__menu-trigger-icon {
@@ -28,7 +44,7 @@
 			width: 100%;
 			height: 2px;
 			background-color: var(--color-text-primary);
-			transition: opacity .1s ease-in-out;
+			transition: opacity .1s, color .3s ease-in-out;
 		}
 
 		&::before {
@@ -37,7 +53,7 @@
 			width: 100%;
 			height: 2px;
 			background-color: var(--color-text-primary);
-			transition: transform .3s ease-in-out;
+			transition: transform .3s, color .3s ease-in-out;
 		}
 
 		&::after {
@@ -46,7 +62,7 @@
 			width: 100%;
 			height: 2px;
 			background-color: var(--color-text-primary);
-			transition: transform .3s ease-in-out;
+			transition: transform .3s, color .3s ease-in-out;
 		}
 	}
 
