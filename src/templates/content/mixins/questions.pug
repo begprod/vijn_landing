@@ -5,7 +5,7 @@ mixin questionsSlider(items)
 				each item in items
 					.swiper-slide.questions-card
 						.questions-card__image
-							img(src= item.image)
+							img(src= item.image alt=item.title)
 						.questions-card__aside
 							h3.questions-card__title= item.title
 							.questions-card__description !{item.description}

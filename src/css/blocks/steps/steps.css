@@ -29,6 +29,7 @@
 			right: 0;
 			bottom: 3px;
 			width: 90%;
+			opacity: .3;
 			border: 1px dashed var(--color-text-primary);
 			transform: translateX(50%);
 			z-index: -1;
