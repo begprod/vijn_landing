@@ -8,6 +8,16 @@
 	}
 }
 
+@media screen and (--screen-s) {
+	.questions {
+		&__inner {
+			.swiper-wrapper {
+				flex-direction: column;
+			}
+		}
+	}
+}
+
 @media screen and (--screen-xs) {
 	.questions {
 		padding-left: 50px;

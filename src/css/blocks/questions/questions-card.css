@@ -48,7 +48,27 @@
 
 		&__image {
 			margin-right: 0;
-			margin-bottom: 40px;
+		}
+	}
+}
+
+@media screen and (--screen-s) {
+	.questions-card {
+		margin-bottom: 80px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&__image {
+			opacity: 1;
+		}
+
+		&__aside {
+			& > * {
+				opacity: 1;
+				transform: none;
+			}
 		}
 	}
 }
