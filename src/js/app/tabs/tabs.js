@@ -4,6 +4,7 @@ class Tabs {
 		this.navigationItems = this.container.querySelectorAll('.js-tabs-nav-item');
 		this.panelsItems = this.container.querySelectorAll('.js-tabs-panel');
 		this.activeClass = 'is-active';
+		this.state = {};
 		this.init();
 	}
 
@@ -39,13 +40,16 @@ class Tabs {
 			item.addEventListener('click', (event) => {
 				this.switchTab(i);
 			})
-		})
+		});
+
+		window.onhashchange = () => {
+			this.setActiveTab(window.location.hash);
+			window.scroll(0, 0);
+		}
 	}
 
 	init() {
-		let hash = window.location.hash;
-
-		this.setActiveTab(hash);
+		this.setActiveTab(window.location.hash);
 		this.bindEvents();
 	}
 }
