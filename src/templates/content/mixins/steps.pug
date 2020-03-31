@@ -3,9 +3,10 @@ mixin step(items)
 		.steps__inner
 			each item in items
 				.steps__item
-					.steps__title= item.title
-					.steps__description= item.description
-					.steps__dot
+					.step
+						.step__title= item.title
+						.step__description= item.description
+						.step__dot
 		.steps__line
 			img(src="./assets/images/line.svg" alt="line")
 
