@@ -10,6 +10,8 @@
 
 	--color-link: #5266CC;
 	--color-link-external: #293D66;
+
+	--color-control-hover: #1F2533;
 }
 
 .theme_base_dark {
@@ -22,4 +24,6 @@
 
 	--color-link: #EEEFF1;
 	--color-link-external: #EEEFF1;
+
+	--color-control-hover: #A3B2D5;
 }

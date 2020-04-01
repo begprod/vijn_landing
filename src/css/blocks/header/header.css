@@ -53,22 +53,6 @@
 
 	&__menu-trigger {
 		display: none;
-
-		&:hover {
-			.header__menu-trigger-icon {
-				span {
-					background-color: var(--color-text-alternate);
-				}
-
-				&::before {
-					background-color: var(--color-text-alternate);
-				}
-
-				&::after {
-					background-color: var(--color-text-alternate);
-				}
-			}
-		}
 	}
 
 	&__menu-trigger-icon {
