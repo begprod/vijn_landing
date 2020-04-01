@@ -11,3 +11,60 @@
 		opacity: 0;
 	}
 }
+
+@keyframes logoRotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(720deg);
+	}
+	100% {
+		transform: rotate(720deg);
+	}
+}
+
+@keyframes segmentFirstRotate {
+	0% {
+		transform: translate(0, 0);
+	}
+	10% {
+		transform: translate(1px, -1px);
+	}
+	85% {
+		transform: translate(1px, -1px);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes segmentSecondRotate {
+	0% {
+		transform: translate(0, 0);
+	}
+	15% {
+		transform: translate(0px, 2px);
+	}
+	90% {
+		transform: translate(0px, 1px);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes segmentThirdRotate {
+	0% {
+		transform: translate(0, 0);
+	}
+	20% {
+		transform: translate(-1px, -1px);
+	}
+	95% {
+		transform: translate(-1px, -1px);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}

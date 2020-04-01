@@ -13,7 +13,7 @@
 		}
 
 		.sign {
-			transition: transform 1s ease-in-out;
+			transition: transform 5s ease-in-out;
 			transform-origin: 17px 17px;
 
 			&__segment {
@@ -23,20 +23,27 @@
 
 		&:hover {
 			.sign {
-				transform: rotate(720deg);
-				transition-delay: 1.3s;
+				animation: logoRotate;
+				animation-duration: 2.5s;
+				animation-delay: 1.3s;
+				animation-timing-function: ease-in-out;
 
 				.sign__segment-1 {
-					transform: translate(2px, -2px);
-					transition-delay: .1s;
+					animation: segmentFirstRotate;
+					animation-duration: 2.5s;
+					animation-timing-function: ease-in-out;
 				}
 				.sign__segment-2 {
-					transform: translate(0px, 2px);
-					transition-delay: .5s;
+					animation: segmentSecondRotate;
+					animation-duration: 2.5s;
+					animation-delay: .3s;
+					animation-timing-function: ease-in-out;
 				}
 				.sign__segment-3 {
-					transform: translate(-2px, -2px);
-					transition-delay: .8s;
+					animation: segmentThirdRotate;
+					animation-duration: 2.5s;
+					animation-delay: .6s;
+					animation-timing-function: ease-in-out;
 				}
 			}
 		}

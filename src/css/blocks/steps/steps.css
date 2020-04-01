@@ -29,8 +29,8 @@
 			right: 0;
 			bottom: 3px;
 			width: 90%;
-			opacity: .3;
-			border: 1px dashed var(--color-text-primary);
+			height: 2px;
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTQyIiBoZWlnaHQ9IjIiIHZpZXdCb3g9IjAgMCA5NDIgMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMSAxSDk0MSIgc3Ryb2tlPSIjMkUzODREIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWRhc2hhcnJheT0iMC4xIDEyIi8+PC9zdmc+);
 			transform: translateX(50%);
 			z-index: -1;
 		}
@@ -38,7 +38,7 @@
 
 	&__line {
 		position: absolute;
-		top: 0;
+		bottom: -20px;
 		width: 100%;
 
 		img {
