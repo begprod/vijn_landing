@@ -7,7 +7,40 @@
 		align-items: center;
 	 }
 
-	&__logo {}
+	&__logo {
+		svg {
+			overflow: initial;
+		}
+
+		.sign {
+			transition: transform 1s ease-in-out;
+			transform-origin: 17px 17px;
+
+			&__segment {
+				transition: transform .3s ease-in-out;
+			}
+		}
+
+		&:hover {
+			.sign {
+				transform: rotate(720deg);
+				transition-delay: 1.3s;
+
+				.sign__segment-1 {
+					transform: translate(2px, -2px);
+					transition-delay: .1s;
+				}
+				.sign__segment-2 {
+					transform: translate(0px, 2px);
+					transition-delay: .5s;
+				}
+				.sign__segment-3 {
+					transform: translate(-2px, -2px);
+					transition-delay: .8s;
+				}
+			}
+		}
+	}
 
 	&__menu {}
 
