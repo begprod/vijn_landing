@@ -1,0 +1,13 @@
+extends ../layouts/default
+
+block vars
+	- var title = 'License Agreement';
+	- var description = "Vijn license agreement";
+
+block content
+	.layout
+		.container.layout__inner
+			h1.layout__title License Agreement
+			.container.container_narrow.layout__content
+				include ../content/legal/licenseagreement
+
