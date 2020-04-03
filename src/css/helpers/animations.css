@@ -12,19 +12,7 @@
 	}
 }
 
-@keyframes logoRotate {
-	0% {
-		transform: rotate(0deg);
-	}
-	25% {
-		transform: rotate(720deg);
-	}
-	100% {
-		transform: rotate(720deg);
-	}
-}
-
-@keyframes segmentFirstRotate {
+@keyframes segmentFirst {
 	0% {
 		transform: translate(0, 0);
 	}
@@ -39,12 +27,12 @@
 	}
 }
 
-@keyframes segmentSecondRotate {
+@keyframes segmentSecond {
 	0% {
 		transform: translate(0, 0);
 	}
 	15% {
-		transform: translate(0px, 2px);
+		transform: translate(0px, 1px);
 	}
 	90% {
 		transform: translate(0px, 1px);
@@ -54,7 +42,7 @@
 	}
 }
 
-@keyframes segmentThirdRotate {
+@keyframes segmentThird {
 	0% {
 		transform: translate(0, 0);
 	}

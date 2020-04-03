@@ -13,7 +13,7 @@
 		}
 
 		.sign {
-			transition: transform 5s ease-in-out;
+			transition: transform 1s ease-in-out;
 			transform-origin: 17px 17px;
 
 			&__segment {
@@ -23,24 +23,22 @@
 
 		&:hover {
 			.sign {
-				animation: logoRotate;
-				animation-duration: 2.5s;
-				animation-delay: 1.3s;
-				animation-timing-function: ease-in-out;
+				transform: rotate(720deg);
+				transition-delay: 1.3s;
 
 				.sign__segment-1 {
-					animation: segmentFirstRotate;
+					animation: segmentFirst;
 					animation-duration: 2.5s;
 					animation-timing-function: ease-in-out;
 				}
 				.sign__segment-2 {
-					animation: segmentSecondRotate;
+					animation: segmentSecond;
 					animation-duration: 2.5s;
 					animation-delay: .3s;
 					animation-timing-function: ease-in-out;
 				}
 				.sign__segment-3 {
-					animation: segmentThirdRotate;
+					animation: segmentThird;
 					animation-duration: 2.5s;
 					animation-delay: .6s;
 					animation-timing-function: ease-in-out;

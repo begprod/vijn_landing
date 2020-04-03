@@ -8,18 +8,31 @@
 		transform: translateY(-50%) rotate(90deg);
 
 		.swiper-pagination-bullet {
-			width: 8px;
-			height: 8px;
-			margin-right: 40px;
-			background-color: var(--color-text-primary);
-			transition: box-shadow .3s ease-in-out;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 32px;
+			height: 32px;
+			margin-right: 20px;
+			outline: none;
+			background-color: transparent;
 
 			&:last-child {
 				margin-right: 0;
 			}
 
+			.dot {
+				width: 8px;
+				height: 8px;
+				background-color: var(--color-text-primary);
+				transition: box-shadow .3s ease-in-out;
+				border-radius: 100%;
+			}
+
 			&.swiper-pagination-bullet-active {
-				box-shadow: 0 0 0 10px var(--color-bg-default), 0 0 0 12px var(--color-text-primary);
+				.dot {
+					box-shadow: 0 0 0 10px var(--color-bg-default), 0 0 0 12px var(--color-text-primary);
+				}
 			}
 		}
 	}
@@ -42,7 +55,7 @@
 	.swiper-container-horizontal {
 		> .swiper-pagination {
 			.swiper-pagination-bullet {
-				margin-right: 30px;
+				margin-right: 10px;
 			}
 		}
 	}
